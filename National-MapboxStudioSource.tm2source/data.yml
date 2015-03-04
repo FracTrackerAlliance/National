@@ -1,0 +1,35 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: developedsimple.9e853b80
+  rev: s-2f0a290b
+  saveCenter: true
+attribution: ''
+center: 
+  - 0.2966
+  - 28.3697
+  - 8
+description: ''
+Layer: 
+  - id: US_co_wellcount_improved
+    Datasource: 
+      file: /Users/joshuaisaacpowell/Desktop/National/US Wells by County/US_co_wellcount_improved.shp
+      type: shape
+    description: ''
+    fields: 
+      County: String
+      COUNTYFP: String
+      NAME: String
+      OBJECTID_1: Number
+      Shape_Area: Number
+      Shape_Leng: Number
+      State: String
+      STATEFP: String
+      STUSPS: String
+      Wells: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=GRS80 +no_defs
+maxzoom: 8
+minzoom: 0
+name: ''

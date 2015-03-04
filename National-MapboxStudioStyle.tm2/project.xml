@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-79.0652,40.0777,12</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///developedsimple.9e853b80]]></Parameter>
+</Parameters>
+
+
+<Style name="US_co_wellcount_improved-fill" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 501) and ([Wells] &lt;= 1000)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#6eafd4" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 1001) and ([Wells] &lt;= 1500)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#6eafd4" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 1501) and ([Wells] &lt;= 5000)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#4693c4" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 5001) and ([Wells] &lt;= 10000)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#2672b3" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 10001) and ([Wells] &lt;= 20000)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#0f539a" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] = null)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#ffffff" />
+    <PolygonSymbolizer fill-opacity="0" fill="#9fcae0" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] = 0)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#ffffff" />
+    <PolygonSymbolizer fill="rgba(0, 0, 0, 0)" fill-opacity="0" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &lt;= 500)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#9fcae0" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Wells] &gt; 20001)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill="#0a3169" fill-opacity="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" />
+    <PolygonSymbolizer fill-opacity="0.75" />
+  </Rule>
+</Style>
+<Layer name="US_co_wellcount_improved"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>US_co_wellcount_improved-fill</StyleName>  </Layer>
+
+</Map>

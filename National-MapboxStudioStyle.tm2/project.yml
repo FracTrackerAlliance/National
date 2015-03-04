@@ -1,0 +1,27 @@
+_prefs: 
+  mapid: developedsimple.a74e0c39
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -79.0652
+  - 40.0777
+  - 12
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: ''
+source: "mapbox:///developedsimple.9e853b80"
+styles: 
+  - style.mss
+template: ''
